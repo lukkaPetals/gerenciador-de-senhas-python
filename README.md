@@ -5,4 +5,4 @@ um gerenciador de senhas "simples" escrito no python
 
 Esse codigo é livre e aberto para uso publico mas, pode haver bugs por ser apenas um exercicio de codigo meu, use pela sua conta e risco
 
-Para usar o codigo é necessario ter a biblioteca cryptography!
+Para usar o codigo é necessario ter a biblioteca cryptography! Não sei se o .EXE precisa ou não da biblioteca
