@@ -46,13 +46,18 @@ def gerador_de_senha():
 
 
 def ver():
-    print('')
-    with open('senhas.txt' , 'r') as senhas:
-        for line in senhas.readlines():
-            data = line.rstrip()
-            serv, senha = data.split("|")
-            print('Serviço:', serv, "| Senha:", fer.decrypt(senha.encode()).decode())
-    print('')
+    try:
+        print('')
+        with open('senhas.txt' , 'r') as senhas:
+            for line in senhas.readlines():
+                data = line.rstrip()
+                serv, senha = data.split("|")
+                print('Serviço:', serv, "| Senha:", fer.decrypt(senha.encode()).decode())
+        print('')
+    except FileNotFoundError:
+        print('')
+        print('Você ainda não tem nenhuma senha salva para visualizar')
+        print('')
 
 
 def adcionar():
